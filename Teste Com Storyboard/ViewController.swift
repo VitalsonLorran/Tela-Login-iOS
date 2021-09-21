@@ -24,7 +24,26 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let email: String? = self.emailTextField.text
         let password :String? = self.passwordTextField.text
         print("Dados: Email \(email) Password: \(password)")
+        let alert: UIAlertController = UIAlertController(title: "Alerta", message: "Olá", preferredStyle: .alert)
         
+        let action1: UIAlertAction = UIAlertAction(title: "Deault", style: .default){
+            (action) in
+            print("clicou no default")
+        }
+        let action2: UIAlertAction = UIAlertAction(title: "Cancel", style: .cancel){
+            (action) in
+            print("clicou no cancel")
+        }
+        let action3: UIAlertAction = UIAlertAction(title: "Desctructive", style: .destructive){
+            (action) in
+            print("Clicou no Destructive")
+        }
+        
+        alert.addAction(action1)
+        alert.addAction(action2) //a segunda opção sempre será o cancel
+        alert.addAction(action3)
+        
+        self.present(alert, animated: true)
     }
     
     //função para apertar return e o teclado ir para o próximo textField

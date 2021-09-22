@@ -44,6 +44,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="clicouEnviarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Du7-0C-wAn"/>
+                                    <segue destination="Yhk-AU-f3Y" kind="presentation" id="DYi-JV-XRg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -61,9 +62,27 @@
             </objects>
             <point key="canvasLocation" x="43" y="-12"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="col-Jk-eGG">
+            <objects>
+                <viewController id="Yhk-AU-f3Y" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2t3-Gy-LUH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8qW-fU-EWX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sco-fh-cG9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1006" y="-3"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Apple_logo_black" width="842" height="1000"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
